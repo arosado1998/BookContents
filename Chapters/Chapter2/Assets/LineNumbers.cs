@@ -8,6 +8,8 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class LineNumbers : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class LineNumbers : MonoBehaviour
     void Start()
     {
         // a new line of code appears!
+        print(MyFunction(SomeInt, OtherInt));
     }
 
     // Update is called once per frame
@@ -27,7 +30,11 @@ public class LineNumbers : MonoBehaviour
     }
 
     int MyFunction(int a, int b)
-    {
-        return a + b;
+    { 
+
+        return a + b; 
+        
     }
 }
+
+
